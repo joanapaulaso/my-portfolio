@@ -3607,9 +3607,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var mobileScreen = window.matchMedia("screen and (min-width: 300px) and (max-width: 660px)");
 
 if (mobileScreen.matches) {
-  var glideOne = new _glide.default('.glide-1', {
-    perView: 1
-  });
+  // const glideOne = new Glide('.glide-1', {
+  //   perView: 1,
+  // })
   var glideTwo = new _glide.default('.glide-2', {
     perView: 1
   });
@@ -3621,42 +3621,38 @@ if (mobileScreen.matches) {
   glideThree.mount();
 } else {
   // Glide Publications & Collabs
-  var glideOneInput = document.querySelector('.glide-1');
-
-  var _glideOne = new _glide.default('.glide-1', {
-    autoplay: 15000,
-    hoverpause: true,
-    perView: 1,
-    animationDuration: 500,
-    rewindDuration: 1000
-  });
-
-  glideOneInput.addEventListener('glideOneInput', function (event) {
-    _glideOne.update({
-      autoplay: event.target.value != 0 ? event.target.value : false,
-      animationDuration: event.target.value,
-      rewindDuration: event.target.value
-    });
-  }); // Glide Awards & Events
-
-  var glideTwoInput = document.querySelector('.glide-2');
-
-  var _glideTwo = new _glide.default('.glide-2', {
-    autoplay: 15000,
-    hoverpause: true,
-    perView: 1,
-    animationDuration: 500,
-    rewindDuration: 1000
-  });
-
-  glideTwoInput.addEventListener('glideTwoInput', function (event) {
-    _glideTwo.update({
-      autoplay: event.target.value != 0 ? event.target.value : false,
-      animationDuration: event.target.value,
-      rewindDuration: event.target.value
-    });
-  }); // Glide Science&Design Projects
-
+  // const glideOneInput = document.querySelector('.glide-1');
+  // const glideOne = new Glide('.glide-1', {
+  //   autoplay: 15000,
+  //   hoverpause: true,
+  //   perView: 1,
+  //   animationDuration: 500,
+  //   rewindDuration: 1000,
+  // })
+  // glideOneInput.addEventListener('glideOneInput', function (event) {
+  //   glideOne.update({
+  //     autoplay: (event.target.value != 0) ? event.target.value : false,
+  //     animationDuration: event.target.value,
+  //     rewindDuration: event.target.value
+  //   })
+  // })
+  // Glide Awards & Events
+  // const glideTwoInput = document.querySelector('.glide-2');
+  // const glideTwo = new Glide('.glide-2', {
+  //   autoplay: 15000,
+  //   hoverpause: true,
+  //   perView: 1,
+  //   animationDuration: 500,
+  //   rewindDuration: 1000,
+  // })
+  // glideTwoInput.addEventListener('glideTwoInput', function (event) {
+  //   glideTwo.update({
+  //     autoplay: (event.target.value != 0) ? event.target.value : false,
+  //     animationDuration: event.target.value,
+  //     rewindDuration: event.target.value
+  //   })
+  // })
+  // Glide Science&Design Projects
   var glideThreeInput = document.querySelector('.glide-3');
 
   var _glideThree = new _glide.default('.glide-3', {
@@ -3673,32 +3669,29 @@ if (mobileScreen.matches) {
       animationDuration: event.target.value,
       rewindDuration: event.target.value
     });
-  });
-
-  _glideOne.mount();
-
-  _glideTwo.mount();
+  }); // glideOne.mount()
+  // glideTwo.mount()
 
   _glideThree.mount();
 } // Awards Certificate Modals
+// document.getElementById("modal_BRMASSAward").addEventListener("click", openBrmass => {
+//   const modal = document.querySelector('.brmass_modal');
+//   modal.classList.add('open_modal')
+// })
+// document.getElementById("modal_JICAward").addEventListener("click", openJic => {
+//   const modal = document.querySelector('.jic_modal');
+//   modal.classList.add('open_modal')
+// })
+// document.getElementById("close_modal_brmass").addEventListener("click", closeModal => {
+//   const modal = document.querySelector('.brmass_modal');
+//   modal.classList.remove('open_modal')
+// })
+// document.getElementById("close_modal_jic").addEventListener("click", closeModal => {
+//   const modal = document.querySelector('.jic_modal');
+//   modal.classList.remove('open_modal')
+// })
+// ScrollUp Button
 
-
-document.getElementById("modal_BRMASSAward").addEventListener("click", function (openBrmass) {
-  var modal = document.querySelector('.brmass_modal');
-  modal.classList.add('open_modal');
-});
-document.getElementById("modal_JICAward").addEventListener("click", function (openJic) {
-  var modal = document.querySelector('.jic_modal');
-  modal.classList.add('open_modal');
-});
-document.getElementById("close_modal_brmass").addEventListener("click", function (closeModal) {
-  var modal = document.querySelector('.brmass_modal');
-  modal.classList.remove('open_modal');
-});
-document.getElementById("close_modal_jic").addEventListener("click", function (closeModal) {
-  var modal = document.querySelector('.jic_modal');
-  modal.classList.remove('open_modal');
-}); // ScrollUp Button
 
 var body = document.body;
 var lastScroll = 0;
@@ -3720,7 +3713,7 @@ window.addEventListener("scroll", function () {
 
   lastScroll = currentScroll;
 });
-},{"@glidejs/glide":"node_modules/@glidejs/glide/dist/glide.esm.js"}],"../../Users/libvu/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"@glidejs/glide":"node_modules/@glidejs/glide/dist/glide.esm.js"}],"C:/Users/libvu/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -3748,7 +3741,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62134" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49682" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -3924,5 +3917,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../Users/libvu/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/general.js"], null)
+},{}]},{},["C:/Users/libvu/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/general.js"], null)
 //# sourceMappingURL=/general.9cf37ccb.js.map

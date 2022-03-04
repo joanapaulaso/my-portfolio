@@ -36271,7 +36271,7 @@ function animate() {
   mesh.rotation.z += .000025 * targetY;
   renderer.render(scene, camera);
 }
-},{"three":"node_modules/three/build/three.module.js","./images":"js/images.js","./shaders/vertex.glsl":"js/shaders/vertex.glsl","./shaders/fragment.glsl":"js/shaders/fragment.glsl"}],"../../Users/libvu/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"three":"node_modules/three/build/three.module.js","./images":"js/images.js","./shaders/vertex.glsl":"js/shaders/vertex.glsl","./shaders/fragment.glsl":"js/shaders/fragment.glsl"}],"C:/Users/libvu/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -36299,7 +36299,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62134" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49682" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -36475,5 +36475,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../Users/libvu/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/sphere.js"], null)
+},{}]},{},["C:/Users/libvu/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/sphere.js"], null)
 //# sourceMappingURL=/sphere.eef03fe0.js.map

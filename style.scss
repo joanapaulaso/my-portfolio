@@ -779,6 +779,16 @@ main {
     font-size: 25em;
   }
 
+  .skills {
+    width: 100vw;
+    padding: 0 1.5rem;
+    font-family: $menu-font;
+    color: $light-font-color;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
   .about__content {
     position: relative;
     flex-basis: 100%;
